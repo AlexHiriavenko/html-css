@@ -1,0 +1,214 @@
+@import url(./normalize.css);
+@import url(./login.css);
+@import url(./modal.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    font-size:                  10px;
+}
+
+html {
+    height:                     100%;
+}
+
+body {
+    font-family:                'Roboto', sans-serif;
+    background-color:           #F9FAFF;
+    height:                     100%;
+}
+
+body > img {
+    position:                   fixed;
+    width:                      35%;
+    right:                      0;
+    bottom:                     0;              
+}
+
+.wrapper {
+    width:                      60%;
+    background-color:           white;
+    border:                     1px solid white;
+    min-height:                 100%;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.register-section {
+    width:                      84%;
+    margin:                     0 auto;
+}
+
+.link-to-login {
+    display:                    block;
+    font-family:                'Roboto', sans-serif;
+    font-size:                  1.4rem;
+    padding-right:              3rem;
+    text-align:                 right;
+    margin-top:                 4rem;
+    color:                      #4743E0;
+    background-image:           url(..//images/user-icon.png);
+    background-repeat:          no-repeat;
+    background-position:        100% 0;
+}
+
+/* register-section__header///////////////////////////////////////////////////////////////////////////*/
+
+.register-section__header {
+    display:                    flex;
+    flex-wrap:                  wrap;
+    justify-content:            space-between;
+    padding-bottom:             2rem;
+    border-bottom:              1px #D1D1D1 dashed;
+    align-items:                center;
+}
+
+
+.register-section__header > h1 {
+    width:                      44%;
+    color:                      #42505C;
+    font-weight:                700;
+    font-size:                  5.2rem;
+    line-height:                1.26;
+    overflow:                   auto;
+}
+
+.register-section__header > p {
+    width:                      44%;
+    font-size:                  1.4rem;
+    line-height:                2;
+    box-sizing:                 border-box;
+}
+
+.register-section__header > p > a,
+.wrapper-form a {
+    color:                      #4743E0;
+    font-size:                  1.4rem;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.wrapper-form {
+    display:                    flex;
+    justify-content:            space-between;
+    border-bottom:              1px #D1D1D1 dashed;
+    margin-top:                 4rem;
+    padding-bottom:             2rem;
+}
+
+.form-left-column,
+.form-right-column {
+    width:                      44%;
+}
+
+
+.wrapper-form__title {
+    display:                    flex;
+    justify-content:            space-between;
+    align-items:                center;
+}
+
+.wrapper-form__title > p {
+    display:                    inline-block;
+    font-size:                  1.2rem;
+    line-height:                2.4rem;
+    vertical-align:             middle;
+}
+
+/* input-type:text /////////////////////////////////////////////////////////////////////////////////////*/
+
+input {
+    width:                      100%;
+    font-size:                  1.4rem;
+    line-height:                2rem;
+    padding:                    1.5rem;
+    box-sizing:                 border-box;
+    margin-bottom:              2rem;
+    border:                     1px solid #D1D1D1;
+    outline:                    0; 
+}
+
+input:focus, input:active {
+    color:                      #4743E0;
+    border:                     1px solid #4743E0;
+    box-shadow:                 0px 0px 14px rgba(71, 67, 224, 0.2);
+}
+
+.reference {
+    height:                     100%;
+}
+
+/* input-type:radio /////////////////////////////////////////////////////////////////////////////////////*/
+
+.flex-radio {
+    display:                    flex;
+    justify-content:            space-between;
+    margin-top:                 0.6rem;
+}
+
+.radio {
+    display:                    none;
+}
+
+.for-radio {
+    display:                    inline-block;
+    width:                      22%;
+    border:                     1px solid #D1D1D1;
+    text-align:                 center;
+    box-sizing:                 border-box;
+    padding:                    1.2rem 0;
+    font-size:                  1.4rem;
+    overflow:                   auto;
+}
+
+.flex-radio span,
+.wrapper-form__title span {
+    opacity:                    0.5;
+    line-height:                2rem;
+}
+
+
+.radio:checked + .for-radio {
+    color:                      #4743E0;
+    border:                     1px solid #4743E0;
+    box-shadow:                 0px 0px 14px rgba(71, 67, 224, 0.2);
+}
+
+.radio:checked + .for-radio span {
+    opacity:                    1;
+}
+
+/* input-type:checkbox + button///////////////////////////////////////////////////////////////////////*/
+
+input[type="checkbox"] {
+    width:                      2rem;
+    height:                     2rem;
+}
+
+label[for="terms"] {
+    position:                   relative;
+    top:                        -0.5rem;
+    padding-left:               1rem;
+    font-size:                  1.4rem;
+}
+
+.wrapper-form__checkbox {
+    margin-top:                 1.4rem;
+}
+
+.wrapper-form button {
+    width:                      18%;
+    font-size:                  1.4rem;
+    color:                      white;
+    background-color:           #4743E0;
+    border:                     none;
+    height:                     4rem;
+}
+
+.none-border {
+    border-bottom:              none;
+    margin-bottom:              4rem;
+}
+
+button:hover {
+    cursor:                     pointer;
+}

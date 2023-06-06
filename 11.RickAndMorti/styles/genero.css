@@ -1,0 +1,27 @@
+.genero-h1 {
+    margin-top:                 6vh;
+    font-size:                  5vh;
+    color:                      #C4C4C4;
+    font-family:                Georgia, 'Times New Roman', Times, serif;
+    background-color:           black;
+    padding-left:               6vw;
+    background-image:           url(../img/rick2.jpg);
+    background-repeat:          no-repeat;
+    background-size:            14%;
+}
+
+.nav a:first-of-type:first-of-type {
+    background-color:           #C4C4C4;
+    font-weight:                400;
+    box-shadow:                 none;
+}
+
+.nav a:nth-of-type(2) {
+    background-color:           white;
+    font-weight:                600;
+    box-shadow:                 0 0 12px 8px rgba(246, 248, 244, 0.75);
+}
+
+.nav a:first-of-type:first-of-type:hover {
+    box-shadow:                 0 0 12px 8px rgba(246, 248, 244, 0.75);
+}

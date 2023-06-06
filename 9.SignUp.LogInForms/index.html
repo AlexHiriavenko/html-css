@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiriavenko_O.V_HW_8</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <img src="./images/mainbackground.png" alt="courier">
+    <div class="wrapper">
+      <div class="register-section">
+        <a href="./login.html" class="link-to-login">Allready a member?</a>
+        <div class="register-section__header">
+          <h1>Input your <br> information</h1>
+          <p>We need you to help us with some basic information for your account creation. Here are our
+            <a href="#">terms and conditions.</a> Please read them carefully. We are GDRP compliiant</p>
+        </div>
+<!-- ///////////////////////////////////////////FORM////////////////////////////////////////////// -->
+        <form action="#">
+<!-- //////////////////////////////////////SECTION-FORM-1//////////////////////////////////////////-->
+          <div class="wrapper-form">
+<!-- /////////////////////////LEFT-COLUMN__FOR__SECTION-FORM-1/////////////////////////////////////-->
+            <div class="form-left-column">
+                <div class="wrapper-form__title">
+                  <p>First name</p>
+                  <a class="open_modal" href="#open" title="click to more information">
+                    <img class="reference" src="./images/question.png" alt="refernce"></a> 
+                </div>
+                <input type="text">
+                <div class="wrapper-form__title">
+                  <p>Company</p>
+                  <a class="open_modal" href="#open" title="click to more information">
+                    <img class="reference" src="./images/question.png" alt="refernce"></a> 
+                </div>
+                <input type="text">
+                <div class="wrapper-form__title">
+                  <p>Number of employees <span>(optional)</span></p>
+                  <a class="open_modal" href="#open" title="click to more information">
+                    <img class="reference" src="./images/question.png" alt="refernce"></a> 
+                </div>
+                <!-- /////////////////////////radio/////////////////////////////-->
+                <div class="flex-radio">
+                  <input class="radio" type="radio" name="quantity" id="first">
+                  <label class="for-radio" for="first"><span>0&#60;20</span></label>
+                  <input class="radio" type="radio" name="quantity" id="second">
+                  <label class="for-radio" for="second"><span>20&#60;50</span></label>
+                  <input class="radio" type="radio" name="quantity" id="third">
+                  <label class="for-radio" for="third"><span>50&#60;100</span></label>
+                  <input class="radio" type="radio" name="quantity" id="fourth">
+                  <label class="for-radio" for="fourth"><span>100&#60;...</span></label>
+                </div>
+            </div>
+<!-- /////////////////////////RIGHT-COLUMN__FOR__SECTION-FORM-1//////////////////////////////////-->
+            <div class="form-right-column">
+                <div class="wrapper-form__title">
+                  <p>Last name</p>
+                  <a class="open_modal" href="#open" title="click to more information">
+                    <img class="reference" src="./images/question.png" alt="refernce"></a> 
+                </div>
+                <input type="text">
+                <div class="wrapper-form__title">
+                  <p>Work email</p>
+                  <a class="open_modal" href="#open" title="click to more information">
+                    <img class="reference" src="./images/question.png" alt="refernce"></a> 
+                </div>
+                <input type="email">
+                <div class="wrapper-form__title">
+                  <p>Phone number <span>(optional)</span></p>
+                  <a class="open_modal" href="#open" title="click to more information">
+                    <img class="reference" src="./images/question.png" alt="refernce"></a> 
+                </div>
+                <input type="tel" placeholder="+380 00 000 000">
+            </div>
+          </div>
+<!-- //////////////////////////////////////SECTION-FORM-2//////////////////////////////////////////-->
+          <div class="wrapper-form">
+<!-- /////////////////////////LEFT-COLUMN__FOR__SECTION-FORM-2/////////////////////////////////////-->
+            <div class="form-left-column">
+              <div class="wrapper-form__title">
+                <p>Password</p>
+                <a class="open_modal" href="#open" title="click to more information">
+                  <img class="reference" src="./images/question.png" alt="refernce"></a> 
+              </div>
+              <input class="test" type="password">
+            </div>
+<!-- /////////////////////////RIGHT-COLUMN__FOR__SECTION-FORM-2//////////////////////////////////-->
+            <div class="form-right-column">
+              <div class="wrapper-form__title">
+                <p>Confirm Password</p>
+                <a class="open_modal" href="#open" title="click to more information">
+                  <img class="reference" src="./images/question.png" alt="refernce"></a> 
+              </div>
+              <input class="test" type="password">
+            </div>                          
+          </div>
+<!-- //////////////////////////////////////SECTION-FORM-3//////////////////////////////////////////-->
+            <div class="wrapper-form none-border">
+              <div class="wrapper-form__checkbox">
+                <input type="checkbox" id="terms">
+                <label for="terms">I agree with <a href="#">terms and conditions.</a></label>
+              </div>
+              <button>Register</button>
+            </div>
+        </form>
+      </div>
+    </div>
+<!-- //////////////////////////////////////MODAL-WINDOW////////////////////////////////////////////-->
+    <div id="modal" class="modal bounceIn">
+      <div id="close_modal">+</div>
+      <div class="modal_txt">
+        <p>for the fields: "First Name" and "Last Name" - enter a value consisting of Latin letters in any case.</p>
+        <p>for the field: "Company" - enter any characters.</p>
+        <p>for the field: "Email" - enter your email</p>
+        <p>in the "Number of employees" option - select the appropriate option.</p>
+        <p>for the "phone number" field - enter the number from the numbers from 0 to 9 in the format +380</p>
+        <p>for the "Password" field - enter at least 8 characters, the password must contain at least one uppercase and one
+        lowercase letter, at least one number and one special character.</p>
+        <p>for the "Confirm password" field - you know what to do.</p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

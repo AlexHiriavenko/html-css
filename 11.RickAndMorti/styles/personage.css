@@ -1,0 +1,9 @@
+.nav a:first-of-type:first-of-type {
+    background-color:           #C4C4C4;
+    font-weight:                400;
+    box-shadow:                 none;
+}
+
+.nav a:first-of-type:first-of-type:hover {
+    box-shadow:                 0 0 12px 8px rgba(246, 248, 244, 0.75);
+}
