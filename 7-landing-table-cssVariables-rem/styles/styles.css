@@ -1,0 +1,251 @@
+@import url(./normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&family=Work+Sans:wght@400;500;700&display=swap');
+
+:root {
+    font-size:                  10px;
+    --fonts-poppins:            'Poppins', sans-serif;
+    --fonts-inter:              'Inter', sans-serif;
+    --fonts-roboto:             'Roboto', sans-serif;
+    --fonts-ws:                 'Work Sans', sans-serif;
+}
+
+body {
+    font-family:                var(--fonts-inter);
+    background-color:           #212529;
+    color:                      white;
+}
+
+header {
+    display:                    flex;
+    justify-content:            space-around;
+    align-items:                center;
+    position:                   sticky;
+    top:                        0;
+    z-index:                    1;
+    font-family:                var(--fonts-poppins);
+    padding:                    1.2rem 0;
+    background-color:           #212529;
+}
+
+nav {
+    width:                      75%;
+}
+
+nav > ul {
+    display:                    flex;
+    justify-content:            center;
+    flex-wrap:                  wrap;
+}
+
+nav a {
+    font-family:                var(--fonts-poppins);
+    font-size:                  1.8rem;
+    font-weight:                600;
+    color:                      white;
+    margin:                     0 1.3rem;
+}
+
+.hire-me {
+    background-color:           #FFB742;
+    color:                      #212529;
+    font-weight:                700;
+    font-size:                  1.8rem;
+    line-height:                1.3;
+    padding:                    1rem 2rem;
+    border-radius:              16%/50%;
+}
+
+.logo {
+    width:                      80%;
+}
+
+h1 {
+    font-weight:                700;
+    font-size:                  3.2rem;
+    line-height:                1.6;
+    margin:                     0 auto;
+    margin-top:                 5rem;
+    text-align:                 center;
+}
+
+h1 > a {
+    color:                      #FFB742;
+    text-decoration:            underline;
+}
+
+h1 > span {
+    font-size:                  4.8rem;
+}
+
+.what-i-do {
+    font-size:                  2.4rem;
+    text-align:                 center;
+}
+
+.avatar {
+    display:                    block;
+    text-align:                 center;
+    margin:                     0 auto;
+    width:                      20rem;
+}
+
+.cards {
+    display:                    flex;
+    flex-wrap:                  wrap;
+    margin-top:                 7rem;
+    justify-content:            center;
+}
+
+.card {
+    display:                    flex;
+    flex-wrap:                  wrap;
+    width:                      25%;
+    height:                     12rem;
+    background-color:           rgba(56, 62, 69, 0.44); 
+    border-radius:              10px;
+    justify-content:            space-around;
+    align-items:                center;
+    font-weight:                700;
+    font-size:                  1.6rem;
+    margin:                     2rem;
+}
+
+.achievements {
+    text-align:                 center;
+    line-height:                1.4;
+}
+
+.achievements span {
+    font-size:                  3.2rem;
+    color:                      #FFB742;
+}
+
+.card p {
+    color:                      #B3B3B3;
+}
+
+.card > img {
+    height:                     30%;
+    background-color:           white;
+    padding:                    1rem;
+    border-radius:              50%;
+}
+
+.about-me {
+    display:                    flex;
+    justify-content:            space-between;
+    width:                      100%;
+    margin-top:                 9rem;
+}
+
+.about-me-img {
+    width:                      45%;
+}
+
+.about-me > img {
+    display:                    block;
+    margin:                     0 auto;
+    margin-top:                 3rem;
+    max-width:                  45%;
+    padding-right:              4rem;
+}
+
+.about-me-description {
+    max-width:                  48%;
+}
+
+.about-me-description > h3,
+.skills-description > h3,
+.featured-works > h3 {
+    font-family:                var(--fonts-poppins);
+    background-color:           rgba(255, 255, 255, 0.08);
+    color:                      #FFB742;
+    font-weight:                600;
+    font-size:                  2rem;
+    line-height:                1.5;
+    padding:                    0.4rem 2rem;
+    border-radius:              16%/50%;
+    width:                      max-content;
+    margin:                     0;
+}
+
+.about-me-description > h2,
+.skills-description > h2,
+.featured-works > h2 {
+    font-family:                var(--fonts-roboto);
+    font-size:                  4.8rem;
+    font-weight:                700;
+    margin:                     0;
+    width:                      max-content;
+}
+
+.about-me-description > p,
+.skills-description > p {
+    font-family:                var(--fonts-poppins);
+    font-size:                  1.6rem;
+    line-height:                1.7;
+    margin-bottom:              5rem;
+    padding-right:              4rem;
+}
+
+.skills {
+    display:                    flex;
+    justify-content:            space-around;
+    flex-wrap:                  wrap;
+    border:                     1px solid white;
+}
+
+.skills-description {
+    max-width:                  52%;
+    border:                     1px solid white;
+}
+
+.skills-icon {
+    max-width:                  44%;
+    border:                     1px solid white;
+}
+
+.skills-icon img {
+    margin:                     1rem;
+}
+
+.skills-icon table {
+    border-spacing:             1.4rem;
+    margin:                     0 auto;
+    border:                     1px solid white;
+}
+
+.skills-icon td {
+    text-align:                 center;
+    background-color:           #383E45;
+    border-radius:              10px;
+}
+
+
+.featured-works {
+    margin-top:                 12rem;
+}
+
+.featured-works h2,
+.featured-works h3 {
+    text-align:                 center;
+    border:                     1px solid white;
+    margin: 0 auto;
+}
+
+.featured-works > ul {
+    display:                    flex;
+    justify-content:            center;
+    align-items:                center;
+    margin-top:                 3rem;
+    border:                     1px solid white;
+}
+
+.featured-works a {
+    font-family:                var(--fonts-poppins);
+    font-size:                  1.6rem;
+    font-weight:                600;
+    color:                      white;
+    margin:                     0 2.6rem;
+}
+

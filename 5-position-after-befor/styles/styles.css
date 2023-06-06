@@ -1,0 +1,167 @@
+/* /////////////////////////////////// general-styles ////////////////////// */
+body {
+    font-family:                'Roboto';
+    font-size:                  18px;
+    color:                      white;
+}
+
+.container-bg {
+    padding-top:                46px;
+    padding-bottom:             15px;
+    background-image:           url(../img/background.png);
+    background-repeat:          no-repeat;
+    background-size:            cover;
+    min-width:                  max-content;
+}
+
+.container {
+    width:                      1030px;
+    margin:                     0 auto;
+}
+
+a {
+    color:                      white;
+}
+
+/* /////////////////////////////////// header ////////////////////////////// */
+
+header {
+    display:                    flex;
+    justify-content:            space-between;
+}
+
+.logo-link {
+    position:                   relative;
+    display:                    flex;
+    align-self:                 center;
+    gap:                        8px;
+    margin:                     5px 0; 
+}
+
+.logo-main-text {
+    font-weight:                700;
+    font-size:                  29px;
+    transition-duration:        .5s;   
+}
+
+.logo-sub-text {
+    display:                    block;
+    font-weight:                700;  
+}
+
+.logo-img {
+    align-self:                 flex-end;
+    margin-bottom:              4px;
+}
+
+.logo-img-color {
+    opacity:                    0;
+    position:                   absolute;
+    top:                        12%;
+    transition-duration:        .5s;
+} 
+
+.logo-link:hover {
+    color:                      #F26522;
+}
+
+.logo-link:hover .logo-img-color {
+    opacity:                    1;
+}
+
+.contacts-list {
+    display:                    flex;
+    flex-direction:             column;
+    justify-content:            space-between;
+    align-items:                flex-end;
+}
+
+.contacts-list a {
+    transition:                 .5s;
+}
+
+.contacts-list a:hover {
+    color:                      #F26522;
+}
+
+/* /////////////////////////////////// main //////////////////////////////// */
+
+main {
+    padding:                    17px 0 48px;
+}
+
+.tours-list {
+    display:                    grid;
+    grid-template-columns:      repeat(3, 1fr);
+    justify-items:              center;
+    gap:                        37px 64px;
+}
+
+.tour-name {
+    margin-top:                 20px;
+    text-align:                 center;
+    transition-duration:        1s;
+}
+
+.tour-link:hover .tour-name {
+    color:                      #F26522;
+}
+
+.tour-card {
+    position:                   relative;
+    overflow:                   hidden;
+}
+
+.hidden-details {
+    position:                   absolute;
+    padding:                    7px 12px 12px ;
+    display:                    flex;
+    justify-content:            space-between;
+    align-items:                flex-end;    
+    background-color:           #F26522;
+    width:                      100%;
+    top:                        100%;
+}
+
+.hidden-details .price-text {
+    font-size:                  10px;
+}
+
+.hidden-details .price-text span {
+    display:                    block;
+    font-size:                  20px;
+    margin-top:                 8px;
+}
+
+.details-text {
+    font-size:                  14px;
+}
+
+.details-text::after {
+    content:                    "";
+    display:                    inline-block;
+    background-image:           url(../img/details-arrow.svg);
+    background-repeat:          no-repeat;
+    width:                      7px;
+    height:                     12px;
+    background-position:        0 1px;
+    margin-left:                16px;
+}
+
+.tour-link:hover .hidden-details {
+    top:                        73.5%;
+    transition-duration:        1s;
+}
+
+.tour-link img {
+    border:                     2px solid white;
+    border-image:               linear-gradient(to right top, black, white, black);
+    border-image-slice:         1;
+}
+
+/* /////////////////////////////////// footer ////////////////////////////// */
+
+.footer-copyright {
+    font-size:                  12px;
+    text-align:                 center;
+}

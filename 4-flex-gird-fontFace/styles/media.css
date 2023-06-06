@@ -1,0 +1,61 @@
+@media (min-width: 320px) and (max-width: 760px) {
+    
+    :root { 
+        font-size:                  6px;
+    }
+
+    .container-section-content {
+        max-width:                  72rem;
+        margin:                     0 auto;
+    }
+
+    /* /////////////////////////////////// services section /////////////////////*/
+
+    .wrapper-grid {
+        height:                     48rem;
+        grid-template-columns:      repeat(2, 1fr);
+        grid-template-rows:         auto;
+        grid-auto-rows:             auto;
+    }
+
+    .grid-element-service-type:nth-of-type(4) {
+        grid-column:                span 2;
+    }
+    
+    .grid-element-service-type:nth-of-type(5) {
+        grid-column:                span 2;    
+    }
+
+
+    /* /////////////////////////////////// machinery section ////////////////////*/
+
+    section.machinery {
+        padding-bottom:             4rem;
+    }
+
+    .flex-list-machinery {
+        flex-wrap:                  wrap;
+        align-items:                flex-end;
+        height:                     90rem;
+        max-width:                  72rem;
+    }
+
+    .machinery-type {
+        min-height:                 max-content !important;
+        height:                     18rem !important;
+        width:                      31.3rem !important;
+    }
+
+    /* /////////////////////////////////// clients section //////////////////////*/
+
+    .wrapper-grid-clients-list {
+        grid-template-columns:      repeat(2, 1fr);
+        min-height: max-content;
+    }
+
+    .clients-item {
+        height:                     28rem;
+    }
+
+}
+

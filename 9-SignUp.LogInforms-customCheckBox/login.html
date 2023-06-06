@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <img src="./images/background-login.png" alt="woman next to the window" class="background-img">
+    <div class="wrapper-login">
+        <div class="register-section-login">
+            <h1>Log in</h1>
+            <p>Please input your information in the fields below to enter your Journey platform.</p>
+            <form action="">
+                <div class="wrapper-form__title">
+                    <p>Account</p>
+                    <a class="open_modal" href="#open" title="click to more information">
+                        <img class="reference" src="./images/question.png" alt="refernce"></a>
+                </div>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <a href="#">Forgot your password?</a>
+                <div class="wrapper-form none-border margin-login">
+                    <div class="wrapper-form__checkbox">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">Remember me</label>
+                    </div>
+                    <button class="button-login">Log in</button>
+                </div>
+            </form>
+        </div>
+        <p class="register-section-footer">Don’t have an account yet?</p>
+        <a href="./index.html" class="to-register">Register here</a>
+    </div>
+    <!-- //////////////////////////////////////MODAL-WINDOW////////////////////////////////////////////-->
+    <div id="modal" class="modal bounceIn">
+        <div id="close_modal">+</div>
+        <div class="modal_txt">
+            <p>for the fields: "First Name" and "Last Name" - enter a value consisting of Latin letters in any case.</p>
+            <p>for the field: "Company" - enter any characters.</p>
+            <p>for the field: "Email" - enter your email</p>
+            <p>in the "Number of employees" option - select the appropriate option.</p>
+            <p>for the "phone number" field - enter the number from the numbers from 0 to 9 in the format +380</p>
+            <p>for the "Password" field - enter at least 8 characters, the password must contain at least one uppercase and
+                one
+                lowercase letter, at least one number and one special character.</p>
+            <p>for the "Confirm password" field - you know what to do.</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>    
+</body>
+</html>
